@@ -1,0 +1,52 @@
+{
+    "client": "Thunder Client",
+    "collectionName": "famp",
+    "dateExported": "2023-10-16T12:09:29.281Z",
+    "version": "1.1",
+    "folders": [
+        {
+            "_id": "f6572528-1636-49f8-be05-45ebd6c647f3",
+            "name": "secao02",
+            "containerId": "",
+            "created": "2023-10-14T14:56:11.816Z",
+            "sortNum": 10000
+        },
+        {
+            "_id": "02da6112-c984-4670-9f98-999ad6b8bdd9",
+            "name": "secao03",
+            "containerId": "",
+            "created": "2023-10-16T12:03:19.938Z",
+            "sortNum": 30000
+        }
+    ],
+    "requests": [
+        {
+            "_id": "56ecc02f-4b57-43e1-8aad-bcc546328e78",
+            "colId": "8f40488f-2e8c-4fd2-aa6a-898552e7c37a",
+            "containerId": "f6572528-1636-49f8-be05-45ebd6c647f3",
+            "name": "GET raiz",
+            "url": "http://localhost:8000/mensagem",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2023-10-14T14:56:25.713Z",
+            "modified": "2023-10-14T15:08:25.175Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "88f80eab-07a1-4851-a9c6-d082d1e2de34",
+            "colId": "8f40488f-2e8c-4fd2-aa6a-898552e7c37a",
+            "containerId": "02da6112-c984-4670-9f98-999ad6b8bdd9",
+            "name": "cursos",
+            "url": "http://localhost:8000/curso",
+            "method": "GET",
+            "sortNum": 20000,
+            "created": "2023-10-16T12:04:32.851Z",
+            "modified": "2023-10-16T12:05:45.708Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        }
+    ]
+}

@@ -1,0 +1,47 @@
+CRIAR AMBIENTE VIRTUAL:
+mkvirtualenv famp-sessao2 -p python3.10
+
+SEÇÃO 3:
+pip install fastapi==0.75.2 gunicorn==20.1.0 uvicorn==0.17.6
+pip freeze > requirements.txt
+
+
+
+-------------------------------------------------------------------------------------------------------------
+SESSÃO 2:
+pip install fastapi uvicorn
+pip install fastapi==0.75.2 uvicorn==0.17.6 [versões do curso]
+
+pip freeze > requirements.txt
+
+uvicorn main:app --reload [ main: nome do arquivo main.py |||| app: nome do objeto fastapi]
+
+CASO COLOQUE:
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="127.0.0.1", port=8000,
+                log_level="info", reload=True)
+BASTA USAR O SEGUINTE COMANDO PARA EXECUTAR O PROGRAMA: python main.py
+
+PUBLICAR NA INTERNET: [ NÃO FUNCIONOU NA SESÃO 2 PODE SER POR CAUSA DA VERSÃO MAIS ATUALIZADA QUE COLOQUEI ]
+utilizar o pacote gunicorn [ pip install gunicorn || pip freeze > requirements.txt ]
+gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker
+[ -w 4 => quantidade de workers que a aplicação terá para responder por ela - balanceamento de carga ]
+[ -k 4 => qual a classe que será executada ]
+
+
+-------------------------------------------------------------------------------------------------------------
+Step 1: Install the python virtual environment package
+pip install virtualenvwrapper-win
+
+Step 2: Creating an environment
+mkvirtualenv env_name
+
+Step 3: Activating the environment
+workon env_name
+
+Step 4: Deactivating the environment
+deactivate
+
+Step 5: Listing the environments created
+lsvirtualenv
+-------------------------------------------------------------------------------------------------------------
