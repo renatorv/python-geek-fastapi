@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "famp",
-    "dateExported": "2023-10-18T11:44:11.222Z",
+    "dateExported": "2023-10-20T11:04:48.930Z",
     "version": "1.1",
     "folders": [
         {
@@ -49,15 +49,34 @@
             "tests": []
         },
         {
+            "_id": "11251cec-5944-4e57-8c3c-22a762a0e1f4",
+            "colId": "8f40488f-2e8c-4fd2-aa6a-898552e7c37a",
+            "containerId": "02da6112-c984-4670-9f98-999ad6b8bdd9",
+            "name": "POST curso",
+            "url": "http://localhost:8000/cursos",
+            "method": "POST",
+            "sortNum": 25000,
+            "created": "2023-10-20T10:41:53.522Z",
+            "modified": "2023-10-20T11:00:54.371Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\": \"Programação em JAVA\",\n  \"aulas\": 100,\n  \"horas\": 50\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
             "_id": "ac86a931-f32d-43ac-ad1f-46743162f76f",
             "colId": "8f40488f-2e8c-4fd2-aa6a-898552e7c37a",
             "containerId": "02da6112-c984-4670-9f98-999ad6b8bdd9",
             "name": "get_curso",
-            "url": "http://localhost:8000/cursos/3",
+            "url": "http://localhost:8000/cursos/1",
             "method": "GET",
             "sortNum": 30000,
             "created": "2023-10-18T10:49:18.770Z",
-            "modified": "2023-10-18T11:43:19.749Z",
+            "modified": "2023-10-20T10:41:48.950Z",
             "headers": [],
             "params": [],
             "tests": []
