@@ -1,6 +1,8 @@
 from fastapi import FastAPI
 from fastapi import HTTPException
 from fastapi import status
+from fastapi.responses import JSONResponse
+from fastapi import Response
 
 from models import Curso
 
@@ -48,6 +50,16 @@ async def put_cursos(curso_id: int, curso: Curso):
         return curso
     else:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f'Não existe um curso com o id: {curso_id}')
+    
+@app.delete('/cursos/{id}')
+async def delete_curso(id:int):
+    if id in cursos:
+        del cursos[id]
+        
+        # return JSONResponse(status_code=status.HTTP_204_NO_CONTENT)
+        return Response(status_code=status.HTTP_204_NO_CONTENT)
+    else:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f'Não existe um curso com o id: {id}')
     
 if __name__ == "__main__":
     import uvicorn
