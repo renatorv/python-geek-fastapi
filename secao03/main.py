@@ -38,6 +38,17 @@ async def post_cursos(curso: Curso):
     del curso.id
     return curso
 
+@app.put('/cursos/{curso_id}')
+async def put_cursos(curso_id: int, curso: Curso):
+    # Verificar se o curso existe na lista de cursos
+    if curso_id in cursos:
+        cursos[curso_id] = curso
+        del curso.id
+        
+        return curso
+    else:
+        raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f'Não existe um curso com o id: {curso_id}')
+    
 if __name__ == "__main__":
     import uvicorn
 
