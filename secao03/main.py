@@ -3,6 +3,7 @@ from fastapi import HTTPException
 from fastapi import status
 from fastapi.responses import JSONResponse
 from fastapi import Response
+from fastapi import Path
 
 from models import Curso
 
@@ -26,7 +27,7 @@ async def get_cursos():
     return cursos
 
 @app.get('/cursos/{curso_id}')
-async def get_curso(curso_id: int):
+async def get_curso(curso_id: int = Path(default=None, title='ID do curso', description='Deve ser entre 1 e 2', gt=0, lt=3)):
     try:
         curso = cursos[curso_id]
         return curso
@@ -56,7 +57,7 @@ async def delete_curso(id:int):
     if id in cursos:
         del cursos[id]
         
-        # return JSONResponse(status_code=status.HTTP_204_NO_CONTENT)
+        # return JSONResponse(status_code=status.HTTP_204_NO_CONTENT) => JSONResponse possui um bug no memento do curso
         return Response(status_code=status.HTTP_204_NO_CONTENT)
     else:
         raise HTTPException(status_code=status.HTTP_404_NOT_FOUND, detail=f'Não existe um curso com o id: {id}')
