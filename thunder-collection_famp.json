@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "famp",
-    "dateExported": "2023-10-20T11:04:48.930Z",
+    "dateExported": "2023-11-14T10:56:07.568Z",
     "version": "1.1",
     "folders": [
         {
@@ -57,12 +57,12 @@
             "method": "POST",
             "sortNum": 25000,
             "created": "2023-10-20T10:41:53.522Z",
-            "modified": "2023-10-20T11:00:54.371Z",
+            "modified": "2023-10-31T10:50:48.224Z",
             "headers": [],
             "params": [],
             "body": {
                 "type": "json",
-                "raw": "{\n  \"titulo\": \"Programação em JAVA\",\n  \"aulas\": 100,\n  \"horas\": 50\n}",
+                "raw": "{\n  \"titulo\": \"Programação em DART\",\n  \"aulas\": 120,\n  \"horas\": 60\n}",
                 "form": []
             },
             "tests": []
@@ -72,11 +72,74 @@
             "colId": "8f40488f-2e8c-4fd2-aa6a-898552e7c37a",
             "containerId": "02da6112-c984-4670-9f98-999ad6b8bdd9",
             "name": "get_curso",
-            "url": "http://localhost:8000/cursos/1",
+            "url": "http://localhost:8000/cursos/5",
             "method": "GET",
             "sortNum": 30000,
             "created": "2023-10-18T10:49:18.770Z",
-            "modified": "2023-10-20T10:41:48.950Z",
+            "modified": "2023-11-13T10:44:00.892Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "adaf8351-4bca-4726-83ad-4c68651451f2",
+            "colId": "8f40488f-2e8c-4fd2-aa6a-898552e7c37a",
+            "containerId": "02da6112-c984-4670-9f98-999ad6b8bdd9",
+            "name": "get_calculadora",
+            "url": "http://localhost:8000/calculadora?a=16&b=20&c=3",
+            "method": "GET",
+            "sortNum": 35000,
+            "created": "2023-11-13T17:12:01.517Z",
+            "modified": "2023-11-14T10:53:04.538Z",
+            "headers": [],
+            "params": [
+                {
+                    "name": "a",
+                    "value": "16",
+                    "isPath": false
+                },
+                {
+                    "name": "b",
+                    "value": "20",
+                    "isPath": false
+                },
+                {
+                    "name": "c",
+                    "value": "3",
+                    "isPath": false
+                }
+            ],
+            "tests": []
+        },
+        {
+            "_id": "a6a3f120-e76b-40fe-b15a-16903c257ae6",
+            "colId": "8f40488f-2e8c-4fd2-aa6a-898552e7c37a",
+            "containerId": "02da6112-c984-4670-9f98-999ad6b8bdd9",
+            "name": "put_curso",
+            "url": "http://localhost:8000/cursos/10",
+            "method": "PUT",
+            "sortNum": 40000,
+            "created": "2023-11-01T17:08:15.424Z",
+            "modified": "2023-11-01T17:15:32.141Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\": \"Programação em DART\",\n  \"aulas\": 43,\n  \"horas\": 99\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "e558c818-c08e-4586-b585-e2900de06e74",
+            "colId": "8f40488f-2e8c-4fd2-aa6a-898552e7c37a",
+            "containerId": "02da6112-c984-4670-9f98-999ad6b8bdd9",
+            "name": "delete_curso",
+            "url": "http://localhost:8000/cursos/1",
+            "method": "DELETE",
+            "sortNum": 50000,
+            "created": "2023-11-01T17:24:33.264Z",
+            "modified": "2023-11-03T10:42:55.600Z",
             "headers": [],
             "params": [],
             "tests": []
