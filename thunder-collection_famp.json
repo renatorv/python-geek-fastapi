@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "famp",
-    "dateExported": "2023-11-14T10:56:07.568Z",
+    "dateExported": "2023-11-14T17:23:03.570Z",
     "version": "1.1",
     "folders": [
         {
@@ -90,8 +90,23 @@
             "method": "GET",
             "sortNum": 35000,
             "created": "2023-11-13T17:12:01.517Z",
-            "modified": "2023-11-14T10:53:04.538Z",
-            "headers": [],
+            "modified": "2023-11-14T17:21:03.436Z",
+            "headers": [
+                {
+                    "name": "x-geek",
+                    "value": "Nariana"
+                },
+                {
+                    "name": "Accept",
+                    "value": "*/*",
+                    "isDisabled": true
+                },
+                {
+                    "name": "User-Agent",
+                    "value": "Thunder Client (https://www.thunderclient.com)",
+                    "isDisabled": true
+                }
+            ],
             "params": [
                 {
                     "name": "a",
