@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "famp",
-    "dateExported": "2023-11-14T17:23:03.570Z",
+    "dateExported": "2023-11-16T11:01:01.107Z",
     "version": "1.1",
     "folders": [
         {
@@ -44,6 +44,34 @@
             "sortNum": 20000,
             "created": "2023-10-16T12:04:32.851Z",
             "modified": "2023-10-18T10:43:31.507Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "e966a40b-7816-4d5c-93dc-7baf4a5ec01d",
+            "colId": "8f40488f-2e8c-4fd2-aa6a-898552e7c37a",
+            "containerId": "02da6112-c984-4670-9f98-999ad6b8bdd9",
+            "name": "get_cursos_rotas",
+            "url": "http://localhost:8000/api/v1/cursos",
+            "method": "GET",
+            "sortNum": 22500,
+            "created": "2023-11-16T10:56:24.465Z",
+            "modified": "2023-11-16T10:57:16.750Z",
+            "headers": [],
+            "params": [],
+            "tests": []
+        },
+        {
+            "_id": "7f8839df-6dae-4e67-9a35-420a2e9d7252",
+            "colId": "8f40488f-2e8c-4fd2-aa6a-898552e7c37a",
+            "containerId": "02da6112-c984-4670-9f98-999ad6b8bdd9",
+            "name": "get_usuarios_rotas",
+            "url": "http://localhost:8000/api/v1/usuarios",
+            "method": "GET",
+            "sortNum": 23750,
+            "created": "2023-11-16T10:57:29.967Z",
+            "modified": "2023-11-16T10:57:50.776Z",
             "headers": [],
             "params": [],
             "tests": []
