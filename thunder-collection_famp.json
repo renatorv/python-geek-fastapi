@@ -1,7 +1,7 @@
 {
     "client": "Thunder Client",
     "collectionName": "famp",
-    "dateExported": "2023-11-16T11:01:01.107Z",
+    "dateExported": "2023-11-16T17:18:55.925Z",
     "version": "1.1",
     "folders": [
         {
@@ -91,6 +91,25 @@
             "body": {
                 "type": "json",
                 "raw": "{\n  \"titulo\": \"Programação em DART\",\n  \"aulas\": 120,\n  \"horas\": 60\n}",
+                "form": []
+            },
+            "tests": []
+        },
+        {
+            "_id": "9011216d-cdc7-47a7-ae48-524ed35901f5",
+            "colId": "8f40488f-2e8c-4fd2-aa6a-898552e7c37a",
+            "containerId": "02da6112-c984-4670-9f98-999ad6b8bdd9",
+            "name": "POST curso II",
+            "url": "http://localhost:8000/cursos",
+            "method": "POST",
+            "sortNum": 27500,
+            "created": "2023-11-16T16:53:03.712Z",
+            "modified": "2023-11-16T17:05:43.945Z",
+            "headers": [],
+            "params": [],
+            "body": {
+                "type": "json",
+                "raw": "{\n  \"titulo\": \"programação teste teste\",\n  \"aulas\": 120,\n  \"horas\": 60\n}",
                 "form": []
             },
             "tests": []
