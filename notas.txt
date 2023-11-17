@@ -31,6 +31,11 @@ gunicorn main:app --workers 4 --worker-class uvicorn.workers.UvicornWorker
 [ -w 4 => quantidade de workers que a aplicação terá para responder por ela - balanceamento de carga ]
 [ -k 4 => qual a classe que será executada ]
 
+-------------------------------------------------------------------------------------------------------------
+
+Seção 4
+pip install fastapi psycopg2-binary sqlalchemy asyncpg uvicorn
+pip install fastapi==0.75.2 gunicorn==20.1.0 uvicorn==0.17.6 psycopg2-binary=2.9.3 sqlalchemy=1.4.36 asyncpg=0.25.0
 
 -------------------------------------------------------------------------------------------------------------
 Step 1: Install the python virtual environment package
@@ -38,6 +43,7 @@ pip install virtualenvwrapper-win
 
 Step 2: Creating an environment
 mkvirtualenv env_name
+mkvirtualenv famp-secao04 -p python3.10
 
 Step 3: Activating the environment
 workon env_name
