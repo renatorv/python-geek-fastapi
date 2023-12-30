@@ -13,4 +13,6 @@ class Settings(BaseSettings):
     class Config:
         case_sensitive = True
         
+# INSTANCIA O OBJETO, 
+# QUE PODE SER UTILIZADO EM QQ LOCAL DA APLICAÇÃO
 settings = Settings()
