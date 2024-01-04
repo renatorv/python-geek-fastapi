@@ -53,4 +53,17 @@ deactivate
 
 Step 5: Listing the environments created
 lsvirtualenv
+
+-------------------------------------------------------------------------------------------------------------
+POSTGRES / DOCKER:
+https://www.commandprompt.com/education/how-to-create-a-postgresql-database-in-docker/
+
+docker pull postgres
+docker run -d --name faculdade -p 5432:5432 -e POSTGRES_PASSWORD=159753 -e POSTGRES_USER=postgres postgres
+docker ps
+docker exec -it <id> bash
+psql -h localhost -U postgres
+CREATE DATABASE tsl_employee;
+\l
+
 -------------------------------------------------------------------------------------------------------------
