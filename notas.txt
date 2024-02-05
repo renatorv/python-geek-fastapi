@@ -54,6 +54,18 @@ deactivate
 Step 5: Listing the environments created
 lsvirtualenv
 
+INSTALAR NO LINUX:
+sudo apt update && sudo apt upgrade -y
+sudo apt install virtualenv python3-pip -y
+pip3 install virtualenvwrapper
+nano ~/.bashrc
+# Virtualenvwrapper settings
+export WORKON_HOME=$HOME/.virtualenvs
+export VIRTUALENVWRAPPER_PYTHON=/usr/bin/python3
+source ~/.local/bin/virtualenvwrapper.sh
+source ~/.bashrc
+[ ssh -i id_rsa ubuntu@129.153.224.249 ]
+
 -------------------------------------------------------------------------------------------------------------
 POSTGRES / DOCKER:
 https://www.commandprompt.com/education/how-to-create-a-postgresql-database-in-docker/
@@ -68,4 +80,11 @@ CREATE DATABASE tsl_employee;
 
 -------------------------------------------------------------------------------------------------------------
 EXECUTAR PROJETO => python main.py
+-------------------------------------------------------------------------------------------------------------
+
+Seção 5
+pip install fastapi==0.75.2 psycopg2-binary==2.9.3 asyncpg==0.25.0 sqlmodel==0.0.6 uvicorn==0.17.6
+
+pip freeze > requirements.txt
+
 -------------------------------------------------------------------------------------------------------------
